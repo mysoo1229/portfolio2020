@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+*{padding:0; margin:0; border:0; vertical-align:top;}
+html,body{width:100%; height:100%;}
+html{overflow-y:scroll;}
+html.removeScroll{overflow:hidden;} /* scroll 있으면 17px 더 큼 */
+
+body{font-family:'Gothic A1', sans-serif;font-size:12px;color:#222;}
+header,main,footer,nav,aside,section{display:block;}
+ul{list-style:none;}
+a, a:hover{color:#222;text-decoration:none;}
+.clearfloat:after{content:''; display:block; clear:both;}
+.blind{display:block; text-indent:-2000px; overflow:hidden;}
+.hidden{display:none;}
+.txtBold{font-weight: 800;}
+.txtLine{text-decoration: line-through;}
+address,i,em{display:block; font-style:normal;}
+table{border-collapse:collapse;}
+th,td{vertical-align:middle;}
