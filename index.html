@@ -5,7 +5,7 @@
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 	
-	<meta name='Title' content="Crystal's Portfoli">
+	<meta name='Title' content="Crystal's Portfolio">
 	<meta name='Subject' content='포트폴리오'>
 	<meta name='Publisher' content='유수정'>
 	<meta name='Location' content='Seoul Korea'>
@@ -23,7 +23,7 @@
 	<link href='./css/style.css' rel='stylesheet' type='text/css'>
 	<link href='./css/responsive.css' rel='stylesheet' type='text/css'>
 
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src='js/index.js'></script>
 </head>
 <body>
@@ -47,7 +47,7 @@
 
 	<header class='addFrame clearfloat'>
 		<div>
-			<a href='index.html'><img src='img/logo.png' alt='Crystal Logo'></a>
+			<a href='/'><img src='img/logo.png' alt='Crystal Logo'></a>
 			<div class='navBtn-wrap'>
 				<a href='javascript:void(0);' class='navBtn'>
 					<span>
@@ -60,10 +60,18 @@
 		</div>
 		<nav>
 			<ul>
-				<li><a href='#about'>ABOUT</a></li>
-				<li><a href='#skills'>SKILLS</a></li>
-				<li><a href='#work'>WORK</a></li>
-				<li><a href='#contact'>CONTACT</a></li>
+				<li><a href='#about' class='navA'>ABOUT</a></li>
+				<li><a href='#skills' class='navA'>SKILLS</a></li>
+				<li><a href='#work' class='navA'>WORK</a>
+					<ul>
+						<li><a href='work/raontech.html'>RAONTECH</a></li>
+						<li><a href='work/incranbo.html'>Incranbo</a></li>
+						<li><a href='work/interpark.html'>Interpark</a></li>
+						<li><a href='work/europe.html'>Europe</a></li>
+						<li><a href='work/portfolio.html'>Portfolio</a></li>
+					</ul>
+				</li>
+				<li><a href='#contact' class='navA'>CONTACT</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -151,8 +159,8 @@
 			<div class='wContent'>
 				<div class='row row1 clearfloat'>
 					<div class='col colI'>
-						<div class='web'><img src='img/work/raontech.png' alt='RAONTECH Website Preview'></div>
-						<div class='mobile'><img src='img/work/raontech_m.png' alt='RAONTECH Mobile Preview'></div>
+						<div class='web'><img src='img/work/raontech/p-web.png' alt='RAONTECH Website Preview'></div>
+						<div class='mobile'><img src='img/work/raontech/p-mobile.png' alt='RAONTECH Mobile Preview'></div>
 					</div>
 					<div class='col colT'>
 						<div>
@@ -164,15 +172,15 @@
 								<li>반응형 웹사이트</li>
 								<li>컨텐츠 제작 (제품 사진, 영문 카피라이트 작성)</li>
 							</ul>
-							<a href='#'>자세히 보기</a>
+							<a href='work/raontech.html'>자세히 보기</a>
 							<a href='http://www.raon.io/microdisplay' target='_blank'>실제 사이트</a>
 						</div>
 					</div>
 				</div>
 				<div class='row row2 clearfloat'>
 					<div class='col colI'>
-						<div class='web'><img src='img/work/incranbo.png' alt='Incranbo Website Preview'></div>
-						<div class='mobile'><img src='img/work/incranbo_m.png' alt='Incranbo Mobile Preview'></div>
+						<div class='web'><img src='img/work/incranbo/p-web.png' alt='Incranbo Website Preview'></div>
+						<div class='mobile'><img src='img/work/incranbo/p-mobile.png' alt='Incranbo Mobile Preview'></div>
 					</div>
 					<div class='col colT'>
 						<div>
@@ -180,51 +188,51 @@
 							<p>웹 템플릿 디자인을 참고하여 제작한 가상의 웹사이트</p>
 							<ul>
 								<li>반응형 웹사이트</li>
-								<li>HTML, CSS, Jquery코딩</li>
+								<li>HTML, CSS, jQuery코딩</li>
 								<li>이미지 갤러리</li>
 								<li>다양한 웹애니메이션</li>
 							</ul>
-							<a href='#'>자세히 보기</a>
-							<a href='http://crystalyoo.dothome.co.kr/incranbo' target='_blank'>라이브 예시</a>
+							<a href='work/incranbo.html'>자세히 보기</a>
+							<a href='http://crystalyoo.com/incranbo' target='_blank'>라이브 예시</a>
 						</div>
 					</div>
 				</div>
 				<div class='row row1 clearfloat'>
 					<div class='col colI'>
-						<div class='web webAlone'><img src='img/work/interpark.png' alt='Interpark Website Preview'></div>
+						<div class='web webAlone'><img src='img/work/interpark/p-web.png' alt='Interpark Website Preview'></div>
 					</div>
 					<div class='col colT'>
 						<div>
 							<h3>INTERPARK</h3>
 							<p>실제 인터파크 티켓 웹사이트를 똑같이 만들어 본 예시</p>
 							<ul>
-								<li>HTML, CSS, Javascript 코딩</li>
+								<li>HTML, CSS, jQuery 코딩</li>
 								<li>2 Depth 메뉴 예시</li>
 								<li>다양한 메뉴 전환 기능</li>
-								<li>Jquery 쿠키 사용 예시</li>
+								<li>jQuery 쿠키 사용 예시</li>
 							</ul>
-							<a href='#'>자세히 보기</a>
-							<a href='http://crystalyoo.dothome.co.kr/interpark' target='_blank'>라이브 예시</a>
+							<a href='work/interpark.html'>자세히 보기</a>
+							<a href='http://crystalyoo.com/interpark' target='_blank'>라이브 예시</a>
 						</div>
 					</div>
 				</div>
 				<div class='row row2 clearfloat'>
 					<div class='col colI'>
-						<div class='web'><img src='img/work/europe.png' alt='Europe Website Preview'></div>
-						<div class='mobile'><img src='img/work/europe_m.png' alt='Europe Mobile Preview'></div>
+						<div class='web'><img src='img/work/europe/p-web.png' alt='Europe Website Preview'></div>
+						<div class='mobile'><img src='img/work/europe/p-mobile.png' alt='Europe Mobile Preview'></div>
 					</div>
 					<div class='col colT'>
 						<div>
 							<h3>EUROPE, 2015</h3>
-							<p>유명 프레임워크를 적용하여 제작한 개인 웹사이트</p>
+							<p>오픈소스를 활용하여 제작한 개인 웹사이트</p>
 							<ul>
 								<li>반응형 웹사이트</li>
-								<li>HTML, CSS, Jquery 코딩</li>
-								<li>Bootstrap을 이용한 배치</li>
-								<li>Masonry를 이용한 이미지 갤러리</li>
+								<li>HTML, CSS, jQuery 코딩</li>
+								<li>부트스트랩을 이용한 CSS 레이아웃 외</li>
+								<li>JS 라이브러리를 이용한 이미지 갤러리</li>
 							</ul>
-							<a href='#'>자세히 보기</a>
-							<a href='http://crystalyoo.dothome.co.kr/europe' target='_blank'>실제 사이트</a>
+							<a href='work/europe.html'>자세히 보기</a>
+							<a href='http://crystalyoo.com/europe' target='_blank'>실제 사이트</a>
 						</div>
 					</div>
 				</div>
@@ -232,8 +240,8 @@
 					<div class='col colT'>
 						<div>
 							<h3>PORTFOLIO SITE</h3>
-							<p>물론<br>이 포트폴리오 웹사이트도<br>제가 직접 코딩했습니다.</p>
-							<a href='#'>자세히 보기</a>
+							<p>물론<br>이 포트폴리오 웹사이트도<br>제가 하나하나 직접 코딩했습니다.</p>
+							<a href='https://github.com/mysoo1229/portfolio2020' target='_blank'>코드 보기</a>
 						</div>
 					</div>
 				</div>
@@ -243,8 +251,8 @@
 		<section id='contact'>
 			<div class='strength'>
 				<div>
-					<h3>혹시,<br>저 찾으셨어요? (헐레벌떡)<i></i></h3>
-					<span>WAIT, THAT'S ME!</span>
+					<h3>잠깐,<br>혹시 저 찾으셨어요? (헐레벌떡)<i></i></h3>
+					<span>OMG, THAT'S ME!</span>
 					<ul>
 						<li><span class='accent'>#</span> 웹퍼블리싱과 웹디자인 능력을 겸비한 사람</li>
 						<li><span class='accent'>#</span> 새롭고 창의적인 일을 좋아하는 사람</li>
@@ -259,7 +267,7 @@
 			<div class='mail'>
 				<a href='mailto:crystalyoodesign@gmail.com'>crystalyoodesign@gmail.com</a>
 			</div>
-			<a href='' class='resume' target='_blank'>이력서 보기</a>
+			<a href='resume.html' class='resume' target='_blank'>이력서 보기</a>
 		</section>
 	</main>
 
@@ -270,13 +278,11 @@
 		<div class='clearfloat'>
 			<div class='language'>
 				<ul>
-					<li><a href='#' class='active'>KOR</a></li>
-					<li><a href='#'>ENG</a></li>
+					<li><a href='mailto:crystalyoodesign@gmail.com'>EMAIL</a></li>
 				</ul>
 			</div>
 			<div class='link'>
 				<ul>
-					<li><a href='mailto:crystalyoodesign@gmail.com'>EMAIL</a></li>
 					<li><a href='https://www.linkedin.com/in/crystal-yoo-40b800122/' target="_blank">LINKEDIN</a></li>
 				</ul>
 			</div>
