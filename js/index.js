@@ -1,9 +1,10 @@
 $(function(){
+
 	var c=0;
+	var fw=$('.frameSide').width();
 	var sAboutPic1=$('#about>div>.pic1').offset().top;
 	var sAboutPic2=$('#about>div>.pic2').offset().top;
-	var fw=$('.frameSide').width();
-
+	
 	//landing
 	$('#landing>.logoBg').fadeOut(1000);
 	setTimeout(function(){
@@ -101,6 +102,7 @@ $(function(){
 			}
 		});
 	});
+	
 
 	//responsive
 	if(fw==20){
@@ -108,35 +110,39 @@ $(function(){
 	}
 
 	//navBtn
-	$('.navBtn').on({
-		click: function(){
-			if(c==0){
-				$('.navBar').addClass('navActive');
-				if(fw==100){
-					$('nav').show().stop().animate({right:'100px'},500);
-				}else if(fw==50){
-					$('nav').show().stop().animate({right:'50px'},500);
-				}else{
-					$('nav').show().stop().animate({right:'20px'},500);
-				}
-				c=1;
+	$('.navA').click(function(){
+		anchor=$(this).attr('href');
+		$('html,body').stop().animate({scrollTop:$(anchor).offset().top-150},600);
+	});
+
+	$('.navBtn').click(function(){
+		if(c==0){
+			$('.navBar').addClass('navActive');
+			if(fw==100){
+				$('nav').show().stop().animate({right:'100px'},500);
+			}else if(fw==50){
+				$('nav').show().stop().animate({right:'50px'},500);
 			}else{
-				$('.navBar').removeClass('navActive');
-				if(fw==100){
-					$('nav').stop().animate({right:'-12px'},500,function(){
-						$('nav').hide();
-					});
-				}else if(fw==50){
-					$('nav').stop().animate({right:'-62px'},500,function(){
-						$('nav').hide();
-					});
-				}else{
-					$('nav').stop().animate({right:'-92px'},500,function(){
-						$('nav').hide();
-					});
-				}
-				c=0;
+				$('nav').show().stop().animate({right:'20px'},500);
 			}
+			c=1;
+		}else{
+			$('.navBar').removeClass('navActive');
+			if(fw==100){
+				$('nav').stop().animate({right:'-12px'},500,function(){
+					$('nav').hide();
+				});
+			}else if(fw==50){
+				$('nav').stop().animate({right:'-62px'},500,function(){
+					$('nav').hide();
+				});
+			}else{
+				$('nav').stop().animate({right:'-92px'},500,function(){
+					$('nav').hide();
+				});
+			}
+			c=0;
 		}
 	});
+
 });
