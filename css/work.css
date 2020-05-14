@@ -64,14 +64,16 @@ main{padding:100px;}
 	.workTitleImg{width: calc(100% - 50px);}
 
 	.workEachTitle>h1{font-size: 36px;}
+	.workEachTitle>p{font-size:12px;}
 	.workEachContent>.workEachHash>div{float: none;}
-	.workEachContent>.workEachHash>.mg16,.workEachContent>.workEachHash>.mg6,.workEachContent{margin-right: 0;}
-	.workEachContent>.workEachHash>.img47,.workEachContent>.workEachHash>.img70{max-width: 100%;}
-	.workEachContent>.workEachHash>.img30{max-width: 64%;margin-right: 2%;}
-	.workEachContent>.workEachHash>.img25{max-width: 50%;}
-	.workEachContent>.workEachHash>.img19{max-width: 34%;}
+	.workEachContent>.workEachHash>div>.mg16,.workEachContent>.workEachHash>div>.mg6,.workEachContent>div{margin-right: 0;}
+	.workEachContent>.workEachHash>div>.img47,.workEachContent>.workEachHash>div>.img70{max-width: 100%;}
+	.workEachContent>.workEachHash>div>.img30{max-width: 64%;margin-right: 2%;}
+	.workEachContent>.workEachHash>div>.img25{max-width: 50%;}
+	.workEachContent>.workEachHash>div>.img19{max-width: 34%;}
 
-	.workEachContent>.workEachHash>.procedure>div{width: calc(100% - 20px);}
+	.workEachContent>.workEachHash>.procedure{margin:0 0 20px 0;}
+	.workEachContent>.workEachHash>.procedure>div{width: 100%;margin:10px 0 20px;}
 
 	.workEachContent>.workEachHash>a{display: block;text-align: center;}
 	.workEachContent>.workEachHash>a:last-child{margin-left:0;margin-top: 15px;}
