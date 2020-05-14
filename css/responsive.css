@@ -11,7 +11,7 @@
 	#landing>.txt>span{font-size: 38px;}
 	#about>div>.pic1{margin-right:-10px;width: 430px;}
 	#about>div>.pic2{margin-left:40px;width: 400px;}
-	#about>div>.content{padding:550px 0 30px 50px;}
+	#about>div>.content{padding:550px 0 30px;}
 	#skills>div>ul{max-width: 500px;padding:0 30px;}
 	#skills>div>ul>li{width: 100%;}
 	#skills>div>ul>li>div{margin:20px 0;}
@@ -38,8 +38,8 @@
 	#about{width:calc(100% - 100px);}
 	#about>div>.pic1{width: 360px;}
 	#about>div>.pic2{width: 260px;}
-	#about>div>.content{padding:500px 0 30px 30px;}
-	#about>div>.content>p{font-size: 15px;max-width: 450px;margin: 20px auto;}
+	#about>div>.content{padding:500px 0 30px;}
+	#about>div>.content>p{max-width: 450px;margin: 20px auto;}
 	#skills{margin: 150px 50px 0;}
 	#skills>div{margin-top: 80px;}
 	#work>div>.row{margin:100px 50px 150px;width:calc(100% - 100px);}
@@ -52,8 +52,7 @@
 	#work>div>.row>.colT>div>ul>li{font-size:14px;}
 	#work>div>.row3>.col{text-align: left;}
 	#work>div>.row3>.col>div>p{font-size: 16px;}
-	#work>div>.row3 a:last-child{margin-left: 0;}
-	#contact{margin:30px 0 150px;padding: 0 50px;}
+	#contact{margin:150px 0 0;padding: 0 50px 150px;}
 	#contact>.strength{width:420px;}
 	#contact>.strength>div{padding:35px 15px 25px 35px;}
 	#contact>.strength>div>span{padding:35px 20px 25px 30px;}
@@ -79,8 +78,8 @@
 	#about>div>.pic1{margin-top: 100px;}
 	#about>div>.pic2{margin-top: 50px;}
 	#about>div>.pic2>span{text-align:right;}
-	#about>div>.content{padding:50px 20px 0;}
-	#about>div>.content>p{margin:15px 0;font-size: 12px;}
+	#about>div>.content{padding:50px 20px 0;text-align: left;}
+	#about>div>.content>p{margin:15px 0;font-size: 14px;}
 	#skills{margin: 120px 20px 0;}
 	#skills>div{margin-top: 35px;}
 	#skills>div>ul{padding: 0 20px;}
@@ -97,16 +96,16 @@
 	#work>div>.row>.colT>div>p{font-size: 11px;}
 	#work>div>.row>.colT>div>ul{margin: 20px 0;}
 	#work>div>.row>.colT>div>ul>li{font-size:12px;}
-	#work>div>.row a{font-size: 12px;}
+	#work>div>.row a{font-size: 12px;display: block;text-align: center;}
+	#work>div>.row a:last-child{margin-left:0;margin-top: 15px;}
 	#work>div>.row3>.col>div>p{font-size: 12px;margin:20px 0;}
-	#contact{margin:50px 0 150px;padding: 0 20px;}
+	#contact{margin:100px 0 0;padding: 0 20px 150px;}
 	#contact>h2{margin-top: 100px;}
 	#contact>.strength{width: calc(100% - 40px);}
 	#contact>.strength>div{padding:35px 25px 20px;}
 	#contact>.strength>div>h3{font-size: 16px;height: 8px;margin-top: -8px;}
 	#contact>.strength>div>span{display: none;}
-	#contact>.strength>div>ul>li{font-size: 12px;}
 	#contact>.mail{margin: 50px 0;}
 	#contact>.mail>a{font-size: 16px;padding:10px 0;}
-	#contact>a.resume{font-size: 12px;}
+	#contact>a.resume{font-size: 12px;display: block;width: calc(100% - 100px);margin:0 auto;}
 }
