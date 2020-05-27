@@ -34,7 +34,7 @@
 	#landing>.txtLeft{top:25%;}
 	#landing>.txtRight{top:75%;}
 	#landingQuebec>.scroll{left:47px;}
-	#landingQuebec>h1{right: 20px;font-size: 30px;}
+	#landingQuebec>.introtxt{right: 70px;font-size: 30px;}
 	#about{width:calc(100% - 100px);}
 	#about>div>.pic1{width: 360px;}
 	#about>div>.pic2{width: 260px;}
@@ -71,7 +71,8 @@
 	#landing>.txt>span{font-size: 23px;}
 	#landingQuebec>.scroll{left:17px;}
 	#landingQuebec>.scroll>.line{height: 50px;}
-	#landingQuebec>h1{top:110px;right: 15px;font-size: 19.5px;}
+	#landingQuebec>.introtxt{top:110px;right: 26px;font-size: 19.5px;}
+	#landingQuebec>.introtxt>div>span{margin:0 -1px;}
 	#about{width:calc(100% - 40px);}
 	#about span.caption{text-align: right;}
 	#about>div>.pic{position: relative;width: 100%;left:0;right: 0;margin: 0;}
