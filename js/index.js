@@ -23,27 +23,50 @@ $(function(){
 		});
 	},2000);
 	setTimeout(function(){
-		$('#landingQuebec').fadeIn(1000,function(){
-			if(fw==100){
-				$('#landingQuebec>h1').animate({right:'150px',opacity:1},1000);
-			}else if(fw==50){
-				$('#landingQuebec>h1').animate({right:'70px',opacity:1},1000);
+		$('#landingQuebec').fadeIn(1000);
+		var rNum=cNum=0;
+		var tyBool=false;
+		var cLength = $('#landingQuebec>.introtxt>.r'+rNum).children().length;
+
+		if(tyBool==false){
+			tyBool=true;
+			var tyInt=setInterval(typing,70);
+		}
+
+		function typing(){
+			if(cNum<=cLength){
+				$('#landingQuebec>.introtxt>.r'+rNum+'>.t'+cNum).show();
+				cNum++;
 			}else{
-				$('#landingQuebec>h1').animate({right:'26px',opacity:1},1000);
+				if(rNum<2){
+					clearInterval(tyInt);
+					rNum++;
+					cNum=0;
+					cLength = $('#landingQuebec>.introtxt>.r'+rNum).children().length;
+					setTimeout(function(){
+						tyInt=setInterval(typing,70);
+					},1);
+
+				}else if(rNum==2){
+					clearInterval(tyInt);
+				}
 			}
-			
-		});
+
+		}
 	},5300);
+	setTimeout(function(){
+		$('.scroll').fadeIn(1000);
+	},8000);
 
 
 	$(window).scroll(function(){
 		//frame
 		if($(window).scrollTop()>2){
 			$('.addFrame').fadeIn();
-			$('#landingQuebec>h1').html("반갑습니다 :D");
+			$('#landingQuebec>.introtxt').html("반갑습니다 :D");
 		}else{
 			$('.addFrame').hide();
-			$('#landingQuebec>h1').html("안녕하세요!<br>새롭고 즐거운 일을 찾아 여행하는<br><span class='txtBold'>웹 퍼블리셔 &amp; 웹 디자이너<br>유수정</span>입니다")
+			$('#landingQuebec>.introtxt').html("안녕하세요!<br>새롭고 즐거운 일을 찾아 여행하는<br><span class='txtBold'>웹 퍼블리셔 &amp; 웹 디자이너<br>유수정</span>입니다")
 		}
 
 		//about
@@ -65,8 +88,8 @@ $(function(){
 		}
 
 		//about H1
-		if($(window).scrollTop()>=$('#about').offset().top+50){$('#landingQuebec>h1').fadeOut(500);}
-		else{$('#landingQuebec>h1').fadeIn(300);}
+		if($(window).scrollTop()>=$('#about').offset().top+50){$('#landingQuebec>.introtxt').fadeOut(500);}
+		else{$('#landingQuebec>.introtxt').fadeIn(300);}
 
 		//skill
 		if( $(window).scrollTop() > $('#skills').offset().top-700){
