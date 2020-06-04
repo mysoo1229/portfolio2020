@@ -18,7 +18,8 @@
 	#skills>div>ul>li>div{padding: 40px 50px;}
 	#skills>div>ul>li>div>h3{display:inline-block;padding:0 15px;}
 	#skills>div>ul>li>div>div{padding-top: 30px;}
-	#work>div>.row>.colT>div{padding: 7% 40px 0;}
+	#work>.row1>.colT{width:calc(45% - 40px);padding-left:40px;}
+	#work>.row2>.colT{width:calc(45% - 40px);padding-right:40px;}
 }
 
 @media all and (max-width:992px){ /*599-992*/
@@ -42,17 +43,18 @@
 	#about>div>.content>p{max-width: 450px;margin: 20px auto;}
 	#skills{margin: 150px 50px 0;}
 	#skills>div{margin-top: 80px;}
-	#work>div>.row{margin:100px 50px 150px;width:calc(100% - 100px);}
-	#work>div>.row h3{font-size:36px;}
-	#work>div>.row>.col{width:100%;float:left;margin:10px auto 0;text-align: left;}
-	#work>div>.row>.colI>.web{width: 66%;margin-left:14%;}
-	#work>div>.row>.colI>.mobile{width:20%;margin-top:-29%;margin-left:67%;}
-	#work>div>.row>.colT>div{padding: 5% 30px 0;max-width: 350px;margin: 0 auto;}
-	#work>div>.row>.colT>div>ul{padding:0 0 0 15px;border-left:1px solid #3a7bd8;border-right:none;}
-	#work>div>.row>.colT>div>ul>li{font-size:14px;}
-	#work>div>.row3>.col{text-align: left;}
-	#work>div>.row3>.col>div>p{font-size: 16px;}
-	#contact{margin:150px 0 0;padding: 0 50px 150px;}
+	#work{padding: 0 50px;}
+	#work>.row{padding:0;margin:100px 50px 120px;}
+	#work>.row>.col{width:100%;float:none;text-align: left;}
+	#work>.row>.colT{width:80%;max-width:80%;padding: 0;margin:50px auto 0;text-align: center;}
+	#work>.row>.colT>.wNum>span{font-size: 24px;}
+	#work>.row>.colT>h3{font-size:36px;}
+	#work>.row>.colT>ul{float:none;margin:20px auto 0;}
+	#work>.row>.colT>ul.w-ul-4{width: 331px;}
+	#work>.row>.colT>ul.w-ul-3{width: 251px;}
+	#work>.row>.colT>a.myBtn{margin-top: 30px;}
+	#work>.row2>.colT>.wNum>span{float:none;}
+	#contact{padding: 0 50px 150px;}
 	#contact>.strength{width:420px;}
 	#contact>.strength>div{padding:35px 15px 25px 35px;}
 	#contact>.strength>div>span{padding:35px 20px 25px 30px;}
@@ -89,17 +91,13 @@
 	#skills>div>ul>li>div>h3{padding:0 0 0 10px;font-size: 20px;}
 	#skills>div>ul>li>div>div{padding-top: 15px;}
 	#skills>div>ul>li>div>div>.text>p{width: 100%;font-size:12px;}
-	#work{margin-top: 120px;}
-	#work>div>.row{margin:50px 20px 80px;width:calc(100% - 40px);}
-	#work>div>.row h3{font-size:30px;}
-	#work>div>.row>.colI>.web{width: 72%;margin-left:10%;}
-	#work>div>.row>.colI>.mobile{margin-left:70%;}
-	#work>div>.row>.colT>div>p{font-size: 11px;}
-	#work>div>.row>.colT>div>ul{margin: 20px 0;}
-	#work>div>.row>.colT>div>ul>li{font-size:12px;}
-	#work>div>.row a{font-size: 12px;display: block;text-align: center;}
-	#work>div>.row a:last-child{margin-left:0;margin-top: 15px;}
-	#work>div>.row3>.col>div>p{font-size: 12px;margin:20px 0;}
+	#work{padding: 0 25px;}
+	#work>.row{margin:100px 30px;}
+	#work>.row3{margin-top: 200px;}
+	#work>.row>.colT{width:100%;max-width:100%;}
+	#work>.row>.colT>h3{font-size:28px;letter-spacing: -3px;margin-top: 20px;}
+	#work>.row>.colT>ul.w-ul-4{width: auto;}
+	#work>.row>.colT>ul>li{margin:5px;}
 	#contact{margin:100px 0 0;padding: 0 20px 150px;}
 	#contact>h2{margin-top: 100px;}
 	#contact>.strength{width: calc(100% - 40px);}
@@ -109,4 +107,5 @@
 	#contact>.mail{margin: 50px 0;}
 	#contact>.mail>a{font-size: 16px;padding:10px 0;}
 	#contact>a.resume{font-size: 12px;display: block;width: calc(100% - 100px);margin:0 auto;}
+	footer>div>.notice{max-width: 50%;}
 }
